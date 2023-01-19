@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="imagens/logo.ico" type="image/x-icon">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <span>Cadastro de Produtos</span>
+      <button onclick="openModal()" id="new"><strong>Adicionar</strong></button>
+    </div>
+
+    <div class="table">
+      <table>
+        <thead>
+          <tr>
+            <th>Nome do produto</th>
+            <th>Nome da categoria</th>
+            <th>Descrição</th>
+            <th>Preço</th>
+            <th>Quantidade em estoque</th>
+            <th class="acao">Editar</th>
+            <th class="acao">Excluir</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+    </div>
+
+    <div class="box">
+      <div class="modal">
+        <form>
+          <label for="n-nome">Nome do produto</label>
+          <input id="n-nome" type="text" required />
+  
+          <label for="n-categoria">Nome da categoria</label>
+          <input id="n-categoria" type="text" required />
+  
+          <label for="n-descricao">Descrição</label>
+          <input id="n-descricao" type="text" required />
+
+          <label for="n-preco">Preço</label>
+          <input id="n-preco" type="text" required />
+
+          <label for="n-quantidade">Quantidade em estoque</label>
+          <input id="n-quantidade" type="number" required />
+
+          <button id="btn"><strong>Salvar</strong></button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
